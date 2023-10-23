@@ -31,7 +31,23 @@ function figure(n)
     plot(xx, koren(xx), 'k', 'LineWidth', 4);
     hold on;
     plot(xx, -koren(xx), 'k', 'LineWidth', 4);
+    hold on;
+    
+    %Izris kvadrata
+    T0=[1,1];
+    T1=[1,-1];
+    T2=[-1,-1];
+    T3=[-1,1];
+   
+    plot(T1,T0,"k",'LineWidth', 2)
+    hold on;
+    plot(T1,T2,"k",'LineWidth', 2)
+    hold on;
+    plot(T0,T3,"k",'LineWidth', 2)
+    hold on;
+    plot(T2,T3,"k",'LineWidth', 2)
     hold off;
+
     title('Naključno generirane točke na krožnici z lokom');
     xlabel('X-os');
     ylabel('Y-os');

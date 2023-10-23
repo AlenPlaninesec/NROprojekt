@@ -32,6 +32,10 @@ function figure(n)
     hold on;
     plot(xx, -koren(xx), 'k', 'LineWidth', 4);
     hold off;
+    title('Naključno generirane točke na krožnici z lokom');
+    xlabel('X-os');
+    ylabel('Y-os');
+    legend('Znotraj krožnice', 'Zunaj krožnice', 'Krožnica');
 end
 
 
